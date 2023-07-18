@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Nội Thất Chiến Thần</title>
+<link rel="stylesheet" type="text/css" href="css/login.css" />
+<style>
+	body{
+		background-image:url(images/background/br.jpg);
+	}
+</style>
+<script>
+function XuatThongTinTrangKhac()
+	{
+		sessionStorage.setItem("Email",document.forms["F1"]["txt_Email"].value);
+	}
+</script>
+</head>
+
+<body>
+<div class="container">
+    <h2>ĐĂNG NHẬP HỆ THỐNG CHIẾN THẦN</h2>
+    <form name="F1" method="post">
+        <h4>Email</h4>
+        <input class="text" name="txt_Email" required="required" title="Vui long kiem tra lai Email!" type="email" pattern="^[a-zA-Z0-9]+@[a-zA-Z]{3,}\.com$"/>
+        <h4>Password</h4>
+        <input class="text" required="required" title="Kiem tra lai Pass phai 10 ky tu" type="password" pattern="^[A-Za-z\d]{8,}$"/><br /><br />
+       <center> <a href="index.html"><input class="button" type="button" value="Đăng Nhập" onclick="XuatThongTinTrangKhac()"/></a></center>
+        <!--<button class="button" onclick="Đăng Nhập" >Đăng Nhập</button>-->
+    </form>
+	
+</div>
+	<div>
+		<img src="images/lg.png" style="height:50px; width: 500px; text-align: left; float: left;">
+	
+	</div>
+</body>
+</html>
